@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+/* Full-width input fields */
+input[type=user_text] {
+    background-image: url(user2.png);
+    background-size: contain;
+    background-position: 1.5px 0px; 
+    background-repeat: no-repeat;
+    width: 98%;
+    padding: 15px 50px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+input[type=name_text] {
+    background-image: url(name.png);
+    background-size: contain;
+    background-position: 1.5px 0px; 
+    background-repeat: no-repeat;
+    width: 98%;
+    padding: 15px 50px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: "Raleway", Arial, sans-serif;
+}
+    
+input[type=password] {
+    background-image: url(pass.png);
+    background-size: contain;
+    background-position: -3.5px 0px; 
+    background-repeat: no-repeat;
+    width: 98%;
+    padding: 15px 50px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+ 
+    
+input[type=birthday_text] {
+    background-image: url(birthday.png);
+    background-size: 15% 90%;
+    background-position: -3.5px 3px; 
+    background-repeat: no-repeat;
+    width: 98%;
+    padding: 15px 50px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: "Raleway", Arial, sans-serif;
+}
+    
+input[type=email_text] {
+    background-image: url(email.png);
+    background-size: contain;
+    background-position: -3.5px 0px; 
+    background-repeat: no-repeat;
+    width: 98%;
+    padding: 15px 50px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: "Raleway", Arial, sans-serif;
+}  
+
+#mail_text {
+    font-size: 110%;
+    font-family: "Raleway", Arial, sans-serif;
+}    
+
+#birth_text {
+    font-size: 110%;
+    font-family: "Raleway", Arial, sans-serif;
+}
+    
+#username_text {
+    font-size: 110%; 
+    font-family: "Raleway", Arial, sans-serif;
+}
+    
+#name_text {
+    font-size: 110%;
+    font-family: "Raleway", Arial, sans-serif;
+}
+    
+#password_text {
+    font-size: 110%;
+    font-family: "Raleway", Arial, sans-serif;
+}
+    
+button {
+    background-color: #3d96cc;
+    font-size:100%;
+    color: white;
+    padding: 15px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #ef3304;
+}
+
+/* Extra styles for the cancel button */
+.signbutton {
+    width: auto;
+    padding: 15px 20px;
+    font-size: 100%;
+    background-color: #3d96cc;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 15px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    padding-top: 0px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 5px solid #888;
+    width: 33%; /* Could be more or less, depending on screen size */
+    height: auto;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.8s;
+    animation: animatezoom 0.8s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .signbutton {
+       width: 100%;
+    }
+}
+    
+#loginbutton {
+    background-color: Transparent;
+    color: black;
+    font-family: fantasy;
+    font-weight: bold;
+}
+</style>
+<body>
+    
+<button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="login.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b id="username_text">Username</b></label>
+      <input type="user_text" placeholder="Enter Username" name="uname" required>
+
+      <label><b id="password_text">Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="signUp();" class="signbutton">Sign Up</button>
+        <a href="forgetPassword"><span class="psw">Forgot password?</span></a>
+    </div>
+  </form>
+</div>
+    
+<div id="id02" class="modal">
+  <form class="modal-content animate" name="signUpForm" action="signUp.php" onsubmit="return validateForm()">
+
+    <div class="container">
+      <label><b id="name_text">Name</b></label>
+      <input type="name_text" placeholder="Enter Your Name" name="name" required>
+        
+      <label><b id="mail_text">Email</b></label>
+      <input type="email_text" placeholder="Enter Your Email" name="email" required>
+        
+      <label><b id="birth_text">Birthday</b></label>
+      <input type="birthday_text" placeholder="MM-DD-YYYY" name="birth" required>
+        
+      <label><b id="username_text">Username</b></label>
+      <input type="user_text" placeholder="Enter Username" name="uname" required>
+
+      <label><b id="password_text">Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Sign Up</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelButton">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    var modal1 = document.getElementById('id02');
+    window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+    }
+</script>
+    
+<script>
+function signUp() {
+    document.getElementById('id01').style.display='none';
+    document.getElementById('id02').style.display='block';
+}
+</script>
+    
+<script>
+function validateForm() {
+    var b = document.forms["signUpForm"]["birth"].value;
+    var e = document.forms["signUpForm"]["email"].value;
+    var checkb = true;
+    if(b.length != 10 || b.charAt(2) != "-" || b.charAt(5) != "-") {
+        checkb = false;
+    }
+    if (checkb == false) {
+        alert("Wrong Type of Birthday Input");
+        return false;
+    }
+    if(e.includes("@")==false) {
+        alert("Wrong Type of Email Input");
+        return false;
+    }
+}
+</script>
+
+</body>
+</html>
