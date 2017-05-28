@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    border: 0;
+}
+
+header {
+    background-image: url(/images/Pic10.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+    text-align: center;
+    color: white;
+    
+    height: 60em;
+}
+
+/* Navigation Custom */
+
+.navbar-custom {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-size: 1.75em;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #FFFF66;
+}
+.navbar-inverse .navbar-text {
+    color: #ecf0f1;
+}
+.navbar-inverse .navbar-nav > li > a {
+/*    color: azure;*/
+    color: white;
+/*    text-shadow: #000 0px 0px 1px;*/
+    font-size: 1.75em;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #CCFF66;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #FFFF66;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: #FF9900;
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom {
+        background-color: transparent;
+        
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        
+        padding: 2em 0;
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #FF9900;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #FF9900;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #FF9900;
+        background-color: transparent;
+    }
+}
+
+/* Header */
+@media (min-width: 768px) {
+    .home-text {
+        margin-top: 13em;
+        margin-left: 35em;
+        
+        line-height: 3.5em;
+    }
+    
+    .home-text span{
+        color: #009999;
+        font-size: 3em;
+    }
+}
+
+/* User Comment */
+.user-comment {
+    min-height: 50em;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    display: flex;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer-text {
+    color: white;
+    font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+    footer {
+        height: 5em;
+    }
+}

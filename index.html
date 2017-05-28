@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>CS411 PROJECT</title>
         <meta charset="utf-8">
         
         <!--    IE browser compatibility    -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--    Custom style   -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        
+
         <!--    Bootstrap file    -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         
-        <title>CS411PROJECT</title>
+        <!--    Custom style (self-define css should the last)   -->
+        <!--    Otherwise, the bootstrap css will override ours instead our define css override bootstrap css    -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
     <body>
-        <p align="center">CS 411 Project Home Page</p>
+        <!--    Navigation   -->
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom" role="navigation">
+           <div class="container">
+               <div class="navbar-header">
+                   <a href="#" class="navbar-brand">
+                       Love Your Self
+                   </a>
+               </div>
+               <div class="collapse navbar-collapse">
+                   <ul class="nav navbar-nav navbar-right">
+                       <li class="active"><a href="#">Home</a></li>
+                       <li><a href="#">About</a></li>
+                       <li><a href="#">Sign up</a></li>
+                       <li><a href="#">Sign in</a></li>
+                   </ul>
+               </div>
+           </div>
+        </nav>
+        
+        <!--    Header: background image    -->
+        <header>
+            <div class="container">
+                <div class="home-text">
+                    <span>Welcome To Our CS 411 Project</span>
+                </div>
+            </div>
+        </header>
+        
+        <!--    User Replay Section    -->
+        <section class="user-comment">
+            <div class="container">
+                <div class="comment-title">
+                    Pass Experience
+                </div>
+            </div>
+        </section>
+        
+        <!--    Footer    -->
+        <footer>
+           <div class="container">
+               <div class="footer-text">CS 411 Project Copyright &copy; Jason Situ & Zecheng Zhang</div>
+           </div>
+        </footer>
         
         <!--    Bootstrap file    -->
+        <script src="js/tether.min.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-3.1.0.min.js"></script>
     </body>
 </html>
