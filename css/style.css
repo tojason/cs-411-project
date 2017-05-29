@@ -4,7 +4,7 @@ html, body {
 }
 
 header {
-    background-image: url(/images/Pic10.jpg);
+    background-image: url(../images/Pic10.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
