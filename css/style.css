@@ -120,6 +120,7 @@ header {
         background-color: transparent;
     } */
     
+/*      Header*/
     .home-text {
         margin-top: 7em;
         margin-left: 7em;  
@@ -133,6 +134,7 @@ header {
 /*        font-family: 'Satisfy', cursive;*/
         font-family: 'Permanent Marker', cursive;
     }
+    
     
     .navbar-custom {
         /*    background-color: transparent;*/
@@ -151,10 +153,10 @@ header {
     }
     .navbar-inverse .navbar-text {
         color: #ecf0f1;
+        font-size: 1.2em;
     }
     .navbar-inverse .navbar-nav > li > a {
         color: white;
-        font-size: 1.2em;
     }
     .navbar-inverse .navbar-nav > li > a:hover,
     .navbar-inverse .navbar-nav > li > a:focus {
