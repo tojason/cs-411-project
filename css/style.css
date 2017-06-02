@@ -144,7 +144,7 @@ header {
 
     .navbar-inverse .navbar-brand {
         color: white;
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     
     .navbar-inverse .navbar-brand:hover,
@@ -153,10 +153,11 @@ header {
     }
     .navbar-inverse .navbar-text {
         color: #ecf0f1;
-        font-size: 1.2em;
+        font-size: 0.1em;
     }
     .navbar-inverse .navbar-nav > li > a {
         color: white;
+        font-size: 1.3em;
     }
     .navbar-inverse .navbar-nav > li > a:hover,
     .navbar-inverse .navbar-nav > li > a:focus {
@@ -173,11 +174,6 @@ header {
     .navbar-inverse .navbar-nav > .open > a:focus {
         color: #FF9900;
         background-color: transparent;
-    }
-    
-    .collapse  {
-        color: #ecf0f1;
-        font-size: 1em;
     }
 }
 
