@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<style>
-
 /* Full-width input fields */
 input[type=user_text] {
-    background-image: url(images/user2.png);
+    background-image: url(../images/user2.png);
     background-size: contain;
-    background-position: 1.5px 0px; 
     background-repeat: no-repeat;
+    background-position: -3.5px 0px; 
     width: 98%;
     padding: 15px 50px;
     margin: 5px 0;
@@ -19,9 +15,8 @@ input[type=user_text] {
 }
 
 input[type=name_text] {
-    background-image: url(images/name.png);
+    background-image: url(../images/name.png);
     background-size: contain;
-    background-position: 1.5px 0px; 
     background-repeat: no-repeat;
     width: 98%;
     padding: 15px 50px;
@@ -31,12 +26,12 @@ input[type=name_text] {
     box-sizing: border-box;
     font-size: 100%;
     font-family: "Raleway", Arial, sans-serif;
+    border: 1px black solid;
 }
     
 input[type=password] {
-    background-image: url(images/pass.png);
+    background-image: url(../images/pass.png);
     background-size: contain;
-    background-position: -3.5px 0px; 
     background-repeat: no-repeat;
     width: 98%;
     padding: 15px 50px;
@@ -48,13 +43,11 @@ input[type=password] {
     font-family: "Raleway", Arial, sans-serif;
 }
 
- 
-    
 input[type=birthday_text] {
-    background-image: url(images/birthday.png);
-    background-size: 15% 90%;
-    background-position: -3.5px 3px; 
+    background-image: url(../images/birthday.png);
+    background-position:-3.5px 1px; 
     background-repeat: no-repeat;
+    background-size: 15% 100%;
     width: 98%;
     padding: 15px 50px;
     margin: 10px 0;
@@ -66,9 +59,9 @@ input[type=birthday_text] {
 }
     
 input[type=email_text] {
-    background-image: url(images/email.png);
+    background-image: url(../images/email.png);
     background-size: contain;
-    background-position: -3.5px 0px; 
+/*    background-position: -3.5px 0px; */
     background-repeat: no-repeat;
     width: 98%;
     padding: 15px 50px;
@@ -117,6 +110,10 @@ button {
     display: inline-block;
 }
 
+.login-btn {
+    width: 98%;
+}
+
 button:hover {
     opacity: 0.8;
     background-color: #ef3304;
@@ -142,7 +139,7 @@ img.avatar {
     border-radius: 50%;
 }
 
-.container {
+.container-login {
     padding: 15px;
 }
 
@@ -155,7 +152,7 @@ span.psw {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1031; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -218,60 +215,10 @@ span.psw {
     }
 }
     
+/*
 #loginbutton {
     background-color: Transparent;
     color: black;
     font-family: fantasy;
     font-weight: bold;
-}
-</style>
-<body>
-    
-<button id="loginbutton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-
-
-<script>
-    var modal = document.getElementById('id01');
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    var modal1 = document.getElementById('id02');
-    window.onclick = function(event) {
-        if (event.target == modal1) {
-            modal1.style.display = "none";
-        }
-    }
-</script>
-    
-<script>
-function signUp() {
-    document.getElementById('id01').style.display='none';
-    document.getElementById('id02').style.display='block';
-}
-</script>
-    
-<script>
-function validateForm() {
-    var b = document.forms["signUpForm"]["birth"].value;
-    var e = document.forms["signUpForm"]["email"].value;
-    var checkb = true;
-    if(b.length != 10 || b.charAt(2) != "-" || b.charAt(5) != "-") {
-        checkb = false;
-    }
-    if (checkb == false) {
-        alert("Wrong Type of Birthday Input");
-        return false;
-    }
-    if(e.includes("@")==false) {
-        alert("Wrong Type of Email Input");
-        return false;
-    }
-}
-</script>
-
-</body>
-</html>
+}*/
