@@ -12,11 +12,18 @@ window.onclick = function(event) {
     }
 }
 
+// handle different event
 function signUp() {
     document.getElementById('id01').style.display='none';
     document.getElementById('id02').style.display='block';
 }
-    
+
+function signUpCancel() {
+    document.getElementById('id01').style.display='block';
+    document.getElementById('id02').style.display='none';
+}
+
+// check if the user enter informations meet the required format
 function validateForm() {
     var b = document.forms["signUpForm"]["birth"].value;
     var e = document.forms["signUpForm"]["email"].value;
